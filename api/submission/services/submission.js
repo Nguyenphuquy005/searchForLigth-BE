@@ -12,6 +12,9 @@ module.exports = {
       data
     );
     const allSubmission = await strapi.query("submission").find();
+    if (allSubmission.filter((e) => e.email === validData.email).length !== 0) {
+      return { error: "Just one postcard per user, please" };
+    }
     if (allSubmission.length > 150) {
       return { error: "Sorry we have got enough 150 submissions" };
     } else {

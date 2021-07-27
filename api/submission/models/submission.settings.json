@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "submissions",
   "info": {
-    "name": "submission"
+    "name": "submission",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -15,10 +16,12 @@
       "type": "string"
     },
     "email": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "address": {
-      "type": "string"
+      "type": "string",
+      "unique": false
     },
     "message": {
       "type": "string"
