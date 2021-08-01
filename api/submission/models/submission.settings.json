@@ -43,6 +43,9 @@
     },
     "additionalAddress": {
       "type": "string"
+    },
+    "recipientName": {
+      "type": "string"
     }
   }
 }
