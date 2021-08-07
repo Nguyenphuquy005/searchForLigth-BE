@@ -1,5 +1,3 @@
-SEND_GRID_KEY=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
-ACCOUNT_SENDER=pcts.vn@gmail.com
 NODE_ENV=development
 DATABASE_HOST=127.0.0.1
 DATABASE_SRV=false
