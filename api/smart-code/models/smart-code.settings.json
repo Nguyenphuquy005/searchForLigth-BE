@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smart_codes",
+  "info": {
+    "name": "smartCode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "users": {
+      "unique": true,
+      "via": "smart_code",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/smart-codes",
+      "handler": "smart-code.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/smart-codes/count",
+      "handler": "smart-code.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/smart-codes/:id",
+      "handler": "smart-code.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/smart-codes",
+      "handler": "smart-code.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/checkIsActive/:idSmartCode",
+      "handler": "smart-code.check_isActive",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/smart-codes/:id",
+      "handler": "smart-code.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/smart-codes/:id",
+      "handler": "smart-code.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
